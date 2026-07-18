@@ -1,40 +1,40 @@
-# Fire Guardian: Fire Eyes for the Edge
+# Fire Guardian：火眼守卫
 
-> An embedded-systems contest prototype for vision-based laboratory fire early warning.
+> 一个基于边缘视觉与物联网联动的嵌入式校赛火情预警原型。
 
-`OpenMV` `Embedded Systems` `Computer Vision` `IoT` `MicroPython` `ESP8266` `Flutter` `Fire Detection` `Student Project`
+`OpenMV` `嵌入式` `计算机视觉` `物联网` `MicroPython` `ESP8266` `Flutter` `Fire Detection` `Student Project`
 
-Fire Guardian explores a practical edge-device loop: detect suspicious flames, combine temperature information, trigger local alarms, and optionally send a remote notification. It is a contest prototype and learning record, not a certified fire-alarm product.
+Fire Guardian 尝试在小型边缘设备上完成一条完整的预警链路：识别疑似火焰、结合温度信息判断、触发本地声光告警，并可选地推送远程通知。它是校赛作品与学习记录，不是经过认证的消防产品。
 
-## Highlights
+## 项目亮点
 
-- Flame candidates detected with color, area, and shape features
-- Temperature-assisted decisions to reduce false alarms
-- Local OLED, LED, and buzzer feedback
-- ESP8266 LAN connectivity and optional remote notification
-- A Flutter companion app experiment in `v2`
+- 依据颜色、面积与形状特征检测疑似火焰
+- 结合温度条件，降低单一视觉判断的误报
+- OLED、LED 与蜂鸣器提供本地反馈
+- ESP8266 支持局域网通信与可选远程通知
+- `v2` 包含 Flutter 配套应用的实验性实现
 
-## Start here
+## 快速开始
 
-1. Open `v1/main.py` in OpenMV IDE.
-2. Run the camera, display, LED, and buzzer first.
-3. Adjust pin mappings and thresholds for your own hardware.
-4. Add the ESP8266 workflow only after the local detection loop works.
+1. 用 OpenMV IDE 打开 `v1/main.py`。
+2. 先验证相机、显示、LED 和蜂鸣器。
+3. 按实际硬件调整引脚、颜色阈值与温度阈值。
+4. 本地检测链路稳定后，再加入 ESP8266 联网功能。
 
-## Project map
+## 目录说明
 
-| Path | What it contains |
+| 路径 | 内容 |
 | --- | --- |
-| `v1/` | Baseline OpenMV detection and local/LAN alerts |
-| `v2/` | Extended detection, remote notification, and Flutter app |
-| `failure-trys/` | Experiments retained for retrospective learning |
+| `v1/` | 基础 OpenMV 检测与本地/局域网告警 |
+| `v2/` | 更完整的检测逻辑、远程通知与 Flutter App |
+| `failure-trys/` | 保留的试错记录，供复盘学习 |
 
-## Configuration safety
+## 配置安全
 
-Wi-Fi and notification values in `v2` use placeholders. Keep your real credentials only in a local copy and never commit them.
+`v2` 中的 Wi-Fi 与通知配置均已改为占位符。真实凭据只应保存在本地副本中，不能提交到 Git。
 
-## Design report
+## 设计报告
 
-See the [redacted public report](v2/Fire-Guardian-public-report.docx) for the project design and iteration notes.
+项目设计和迭代记录请看[匿名公开版报告](v2/Fire-Guardian-public-report.docx)。原始 PDF 尚未脱敏，暂不作为公开资料引用。
 
-> Safety note: This is an embedded-systems contest/teaching prototype and must not replace a standards-compliant fire alarm system.
+> 安全说明：这是嵌入式校赛/教学原型，不能替代符合标准的消防报警系统。
