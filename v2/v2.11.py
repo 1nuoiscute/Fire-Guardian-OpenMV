@@ -41,11 +41,11 @@ TCP_SERVER_PORT = 8080
 ESP8266_BAUDRATE = 115200
 
 # ★ 新增：手机热点配置（ESP8266通过STA连此热点上外网）
-STA_SSID = "Yinor"
-STA_PASSWORD = "dgj123456"
+STA_SSID = "YOUR_WIFI_SSID"
+STA_PASSWORD = "YOUR_WIFI_PASSWORD"
 
 # ★ 新增：PushPlus推送配置
-PUSHPLUS_TOKEN = "b1c53f6533d744069ddfb912c50777cf"
+PUSHPLUS_TOKEN = "YOUR_PUSHPLUS_TOKEN"
 PUSHPLUS_COOLDOWN = 60000  # 推送冷却时间60秒，避免刷屏
 
 # ====================== 4. 节流间隔配置 ======================
