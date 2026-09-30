@@ -1,4 +1,4 @@
-# Fire Guardian：火眼守卫
+# Fire Guardian：火焰守卫
 
 > 一个基于边缘视觉与物联网联动的嵌入式校赛火情预警原型。
 
